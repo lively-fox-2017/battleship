@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Battleship Mini Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div id="options">
+      <h1>Battleship Mini Game</h1>
+      Select Level :<br>
+      <select onchange="setTorpedos()" id="level">
+        <option value="0">Easy</option>
+        <option value="1">Medium</option>
+        <option value="2">Hard</option>
+      </select><br>
+      <button type="button" onclick="location.reload()" name="random">Random Enemy</button>
+      <input type="checkbox" id="showEnemy" onclick="showEnemy()" disabled>Show Enemy <br>
+      Torpedos & Enemy <br>
+      <b><input type="text" id="torpedos" value=""></b>
+      <b><input type="text" id="enemy" value=""></b>
+    </div>
+    <div id="gameboard">
+    <script type="text/javascript" src="battleship.js"></script>
+    </div>
+  </body>
+</html>
